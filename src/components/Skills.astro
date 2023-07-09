@@ -1,0 +1,46 @@
+---
+import { SKILLS } from "@config";
+import LinkButton from "./LinkButton.astro";
+import skillIcons from "@assets/skillIcons";
+---
+
+<div class={"skills-grid sm:skills-grid--m"}>
+  {
+    SKILLS.map((skill, index) => (
+      <LinkButton
+        href={skill.href}
+        className={`link-button skill-icon ${
+          index === SKILLS.length - 1 ? "grid-item-last" : ""
+        }`}
+        title={skill.linkTitle}
+      >
+        <Fragment class="skill" set:html={skillIcons[skill.name]} />
+      </LinkButton>
+    ))
+  }
+</div>
+
+<style>
+  .skills-grid {
+    @apply my-6;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+  }
+
+  @media screen and (max-width: 640px) {
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1em;
+    }
+    .grid-item-last {
+      grid-column: 2 / span 1;
+      grid-row: 4;
+    }
+  }
+
+  .link-button {
+    @apply m-1 h-20 w-20 hover:rotate-6 sm:p-1;
+  }
+</style>
