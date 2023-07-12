@@ -10,6 +10,7 @@ import Socials from "@components/Socials.astro";
 import Skills from "@components/Skills.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import slugify from "@utils/slugify";
+import Career from "@components/Career.astro";
 
 const posts = await getCollection("blog");
 
@@ -46,6 +47,13 @@ const sortedPosts = getSortedPosts(posts);
     <section id="technologies">
       <h2>Technologies</h2>
       <Skills />
+    </section>
+
+    <Hr />
+
+    <section id="career">
+      <h2>Career</h2>
+      <Career />
     </section>
 
     <Hr />
@@ -111,11 +119,13 @@ const sortedPosts = getSortedPosts(posts);
 
   /* ===== Featured & Recent Posts Sections ===== */
   #technologies,
-  #recent-posts {
+  #recent-posts,
+  #career {
     @apply pb-6 pt-12;
   }
   #technologies h2,
-  #recent-posts h2 {
+  #recent-posts h2,
+  #career h2 {
     @apply text-2xl font-semibold tracking-wide;
   }
   .all-posts-btn-wrapper {

@@ -102,3 +102,66 @@ export const SKILLS: SkillObjects = [
     active: true,
   },
 ];
+
+export const EXPERIENCES: any = [
+  {
+    name: "ReactJS",
+    href: "https://react.dev",
+    linkTitle: `${SITE.title} on LinkedIn`,
+    active: true,
+  },
+  {
+    name: "NodeJS",
+    href: "https:/linkedin.com/in/diogoparentedev",
+    linkTitle: `${SITE.title} on LinkedIn`,
+    active: true,
+  },
+  {
+    name: "Astro",
+    href: "https:/linkedin.com/in/diogoparentedev",
+    linkTitle: `${SITE.title} on LinkedIn`,
+    active: true,
+  },
+  {
+    name: "Typescript",
+    href: "https:/linkedin.com/in/diogoparentedev",
+    linkTitle: `${SITE.title} on LinkedIn`,
+    active: true,
+  },
+  {
+    name: "Sass",
+    href: "https:/linkedin.com/in/diogoparentedev",
+    linkTitle: `${SITE.title} on LinkedIn`,
+    active: true,
+  },
+  {
+    name: "Solidity",
+    href: "https:/linkedin.com/in/diogoparentedev",
+    linkTitle: `${SITE.title} on LinkedIn`,
+    active: true,
+  },
+  {
+    name: "GraphQL",
+    href: "https:/linkedin.com/in/diogoparentedev",
+    linkTitle: `${SITE.title} on LinkedIn`,
+    active: true,
+  },
+  {
+    name: "Redux",
+    href: "https:/linkedin.com/in/diogoparentedev",
+    linkTitle: `${SITE.title} on LinkedIn`,
+    active: true,
+  },
+  {
+    name: "Gatsby",
+    href: "https:/linkedin.com/in/diogoparentedev",
+    linkTitle: `${SITE.title} on LinkedIn`,
+    active: true,
+  },
+  {
+    name: "Strapi",
+    href: "https:/linkedin.com/in/diogoparentedev",
+    linkTitle: `${SITE.title} on LinkedIn`,
+    active: true,
+  },
+];

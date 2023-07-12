@@ -1,0 +1,15 @@
+---
+import Experience from "./Experience.astro";
+---
+
+<div class="container mx-auto">
+  <div role="article" class="md:px-8 py-12">
+    <div class="xl:px-0 px-6">
+      <div class="grid-cols-1 sm:grid-cols-2">
+        {["A", "B", "C"].map(() => <Experience />)}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style></style>
